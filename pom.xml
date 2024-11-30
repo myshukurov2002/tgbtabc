@@ -38,9 +38,15 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.0.0</version>
                 <configuration>
-                    <mainClass>com.company.Main</mainClass>
+                    <executable>java</executable>
+                    <arguments>
+                        <argument>-cp</argument>
+                        <classpath/>
+                        <argument>com.company.Main</argument>
+                    </arguments>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 
